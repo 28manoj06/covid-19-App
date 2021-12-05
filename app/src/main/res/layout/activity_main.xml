@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="COUNTRY NAME"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="47dp"
+       />
+    <TextView
+        android:id="@+id/tvTitleCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:text="Total Cases"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+   <TextView
+        android:id="@+id/tvTitleRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/green"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Total Recovered"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+    <TextView
+        android:id="@+id/tvTotalCases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textSize="16dp"
+        android:textColor="@color/red"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitleCases"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleCases"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleCases" />
+
+    <TextView
+        android:id="@+id/tvTotalRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000"
+        android:textSize="16dp"
+        android:textColor="@color/green"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitleRecovered"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleRecovered"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleRecovered"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
